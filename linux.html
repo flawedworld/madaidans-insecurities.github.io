@@ -13,7 +13,7 @@
 <body>
   <h1>Linux (In)security</h1>
 
-  <p class="date"><i><time datetime="2021-04-04">Last edited: April 4, 2021</time></i></p>
+  <p class="date"><em><time datetime="2021-04-04">Last edited: April 4, 2021</time></em></p>
 
   <p>
     Linux being secure is a common misconception in the security and privacy realm. Linux is thought to be secure primarily
@@ -58,7 +58,7 @@
     Even more examples of this is how Flatpak gives full access to directories such as <code>/sys</code> or
     <code>/proc</code> (kernel interfaces known for information leaks). <br>
     <br>
-    <i>Another</i> example is how the seccomp filter <a
+    <em>Another</em> example is how the seccomp filter <a
       href="https://github.com/flatpak/flatpak/blob/f687f6b2ebfe9bc69f59e42bb96475ca01f08548/common/flatpak-run.c#L2646-L2693">
     only blacklists ~20 syscalls</a> which still exposes significant kernel attack surface.
   </p>
@@ -143,7 +143,7 @@
     The Linux kernel is equivalent to running all user space code as root in PID 1. <br>
     <br>
     One example of these features is <a href="https://lwn.net/Articles/740157/">eBPF</a>. In a nutshell, eBPF is a framework within the
-    Linux kernel that allows <i>unprivileged</i> user space to execute arbitrary code within the kernel for increased performance. eBPF
+    Linux kernel that allows <em>unprivileged</em> user space to execute arbitrary code within the kernel for increased performance. eBPF
     also includes a JIT compiler which is fundamentally a W^X violation and opens up the possibility of JIT spraying. The kernel does perform
     a number of checks on the code that is executed but even then, this feature <a
     href="https://ricklarabee.blogspot.com/2018/07/ebpf-and-analysis-of-get-rekt-linux.html">has</a> <a
@@ -166,7 +166,7 @@
     <br>
     The kernel is written entirely in a memory unsafe language and has hundreds of bugs, many being security vulnerabilities, <a
     href="https://events19.linuxfoundation.org/wp-content/uploads/2017/11/Syzbot-and-the-Tale-of-Thousand-Kernel-Bugs-Dmitry-Vyukov-Google.pdf">discovered
-    each <i>month</i></a>. In fact, there are so many bugs being found in the kernel, developers can’t keep up which
+    each <em>month</em></a>. In fact, there are so many bugs being found in the kernel, developers can’t keep up which
     results in many of the bugs <a href="https://syzkaller.appspot.com/upstream">staying unfixed for a long time</a>.
     <a href="https://jon.oberheide.org/files/syscan12-exploitinglinux.pdf">The kernel is decades behind in exploit
     mitigations</a> and many kernel developers simply <a
