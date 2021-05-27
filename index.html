@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src-elem 'self' 'sha256-Hni03aigbrenTNqGilzpCwgILZc/71KFD3f7cX5Mtig='; script-src-elem 'self' 'sha256-3GmX9ZJVSjVE14X8tyUcIeLH5lWDmOeR/CmPZrCi3HU='; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'none'">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Articles | Madaidan's Insecurities</title>
 </head>
@@ -11,7 +12,7 @@
 <body>
   <h1>Articles</h1>
 
-  <ul style="padding-left: 0;">
+  <ul id="home-list">
     <li class="link"><a href="android.html">Android</a></li>
     <li class="link"><a href="linux.html">Linux</a></li>
     <li class="link"><a href="linux-phones.html">Linux Phones</a></li>
@@ -25,7 +26,7 @@
 
   <h1>Guides</h1>
 
-  <ul style="padding-left: 0;">
+  <ul id="home-list">
     <li class="link"><a href="security-privacy-advice.html">Security and Privacy Advice</a></li>
     <li class="link"><a href="guides/linux-hardening.html">Linux Hardening Guide</a></li>
   </ul>
